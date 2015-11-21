@@ -1,8 +1,8 @@
-package afzkl.development.colorpickerview.demo;
+package com.github.nicolausyes.colorpickerview.demo;
 
-import afzkl.development.colorpickerview.view.ColorPanelView;
-import afzkl.development.colorpickerview.view.ColorPickerView;
-import afzkl.development.colorpickerview.view.ColorPickerView.OnColorChangedListener;
+import com.github.nicolausyes.colorpickerview.view.ColorPanelView;
+import com.github.nicolausyes.colorpickerview.view.ColorPickerView;
+import com.github.nicolausyes.colorpickerview.view.ColorPickerView.OnColorChangedListener;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.graphics.PixelFormat;

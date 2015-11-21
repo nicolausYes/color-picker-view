@@ -1,9 +1,9 @@
-package afzkl.development.colorpickerview.demo;
+package com.github.nicolausyes.colorpickerview.demo;
 
-import afzkl.development.colorpickerview.dialog.ColorPickerDialogFragment;
-import afzkl.development.colorpickerview.dialog.ColorPickerDialogFragment.ColorPickerDialogListener;
-import afzkl.development.colorpickerview.preference.ColorPreference;
-import afzkl.development.colorpickerview.preference.ColorPreference.OnShowDialogListener;
+import com.github.nicolausyes.colorpickerview.dialog.ColorPickerDialogFragment;
+import com.github.nicolausyes.colorpickerview.dialog.ColorPickerDialogFragment.ColorPickerDialogListener;
+import com.github.nicolausyes.colorpickerview.preference.ColorPreference;
+import com.github.nicolausyes.colorpickerview.preference.ColorPreference.OnShowDialogListener;
 import android.app.Activity;
 import android.app.DialogFragment;
 import android.graphics.Color;

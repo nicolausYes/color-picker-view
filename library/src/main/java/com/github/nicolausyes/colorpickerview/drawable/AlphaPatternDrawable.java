@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package afzkl.development.colorpickerview.drawable;
+package com.github.nicolausyes.colorpickerview.drawable;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

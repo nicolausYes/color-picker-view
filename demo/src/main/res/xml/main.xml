@@ -15,10 +15,10 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:picker="http://schemas.android.com/apk/res/afzkl.development.colorpickerview.demo" >
+    xmlns:picker="http://schemas.android.com/apk/res/com.github.nicolausyes.colorpickerview.demo" >
 
     <PreferenceCategory android:title="Demo" >
-        <afzkl.development.colorpickerview.preference.ColorPreference
+        <com.github.nicolausyes.colorpickerview.preference.ColorPreference
             android:defaultValue="0xFF000000"
             android:key="color"
             android:summary="Show our color picker using the custom ColorPreference class."
@@ -29,17 +29,17 @@
             android:title="Show Activity" >
             <intent
                 android:action="android.intent.action.VIEW"
-                android:targetClass="afzkl.development.colorpickerview.demo.ColorPickerActivity"
-                android:targetPackage="afzkl.development.colorpickerview.demo" />
+                android:targetClass="com.github.nicolausyes.colorpickerview.demo.ColorPickerActivity"
+                android:targetPackage="com.github.nicolausyes.colorpickerview.demo" />
         </Preference>
     </PreferenceCategory>
     <PreferenceCategory android:title="Library" >
         <Preference
-            android:summary="https://github.com/danielnilsson9/color-picker-view"
+            android:summary="https://github.com/nicolausyes/color-picker-view"
             android:title="Get Source Code" >
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="https://github.com/danielnilsson9/color-picker-view" />
+                android:data="https://github.com/nicolausyes/color-picker-view" />
         </Preference>
     </PreferenceCategory>
 

@@ -1,4 +1,4 @@
-package afzkl.development.colorpickerview.demo;
+package com.github.nicolausyes.colorpickerview.demo;
 
 
 import android.app.AlertDialog;
