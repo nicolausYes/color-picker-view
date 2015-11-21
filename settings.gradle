@@ -1,2 +1,1 @@
-include ':color-picker-view', ':demo'
-
+include ':library', ':demo'
