@@ -86,9 +86,9 @@ public class ColorPickerView extends View{
 	private final static int 	DEFAULT_BORDER_COLOR = 0xFF6E6E6E;
 	private final static int	DEFAULT_SLIDER_COLOR = 0xFFBDBDBD;
 	
-	private final static int 	HUE_PANEL_WDITH_DP = 30;
+	private final static int 	HUE_PANEL_WIDTH_DP = 16;
 	private final static int 	ALPHA_PANEL_HEIGH_DP = 20;
-	private final static int	PANEL_SPACING_DP = 10;
+	private final static int	PANEL_SPACING_DP = 16;
 	private final static int	CIRCLE_TRACKER_RADIUS_DP = 5;
 	private final static int 	SLIDER_TRACKER_SIZE_DP = 4;
 	private final static int	SLIDER_TRACKER_OFFSET_DP = 2;
@@ -250,7 +250,7 @@ public class ColorPickerView extends View{
 		applyThemeColors(context);
 		
 		
-		mHuePanelWidthPx = DrawingUtils.dpToPx(getContext(), HUE_PANEL_WDITH_DP);
+		mHuePanelWidthPx = DrawingUtils.dpToPx(getContext(), HUE_PANEL_WIDTH_DP);
 		mAlphaPanelHeightPx = DrawingUtils.dpToPx(getContext(), ALPHA_PANEL_HEIGH_DP);
 		mPanelSpacingPx = DrawingUtils.dpToPx(getContext(), PANEL_SPACING_DP);
 		mCircleTrackerRadiusPx = DrawingUtils.dpToPx(getContext(), CIRCLE_TRACKER_RADIUS_DP);
@@ -380,10 +380,10 @@ public class ColorPickerView extends View{
 			// wasn't supported by hardware acceleration which mean 
 			// there is no need to turn it of anymore. The rest of 
 			// the view will still be hw accelerated.
-			mSatValBackgroundCache.canvas.drawRect(0, 0, 
+			mSatValBackgroundCache.canvas.drawRect(0, 0,
 					mSatValBackgroundCache.bitmap.getWidth(), 
 					mSatValBackgroundCache.bitmap.getHeight(), 
-					mSatValPaint);			
+					mSatValPaint);
 			
 			//We set the hue value in our cache to which hue it was drawn with, 
 			//then we know that if it hasn't changed we can reuse our cached bitmap.
@@ -405,7 +405,6 @@ public class ColorPickerView extends View{
 		mSatValTrackerPaint.setColor(0xffdddddd);
 		canvas.drawCircle(p.x, p.y, 
 				mCircleTrackerRadiusPx, mSatValTrackerPaint);
-		
 	}
 	
 	private void drawHuePanel(Canvas canvas){	
