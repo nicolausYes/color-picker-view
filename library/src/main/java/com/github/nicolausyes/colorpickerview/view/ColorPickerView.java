@@ -85,10 +85,10 @@ public class ColorPickerView extends View{
 
 	private final static int 	DEFAULT_BORDER_COLOR = 0xFF6E6E6E;
 	private final static int	DEFAULT_SLIDER_COLOR = 0xFFBDBDBD;
-	
-	private final static int 	HUE_PANEL_WIDTH_DP = 16;
-	private final static int 	ALPHA_PANEL_HEIGH_DP = 20;
-	private final static int	PANEL_SPACING_DP = 16;
+
+	private final static int 	HUE_PANEL_WIDTH_DP = 30;
+	private final static int 	ALPHA_PANEL_HEIGHT_DP = 20;
+	private final static int	PANEL_SPACING_DP = 10;
 	private final static int	CIRCLE_TRACKER_RADIUS_DP = 5;
 	private final static int 	SLIDER_TRACKER_SIZE_DP = 4;
 	private final static int	SLIDER_TRACKER_OFFSET_DP = 2;
@@ -245,19 +245,23 @@ public class ColorPickerView extends View{
 		mAlphaSliderText = a.getString(R.styleable.colorpickerview__ColorPickerView_alphaChannelText);
 		mSliderTrackerColor = a.getColor(R.styleable.colorpickerview__ColorPickerView_sliderColor, 0xFFBDBDBD);
 		mBorderColor = a.getColor(R.styleable.colorpickerview__ColorPickerView_borderColor, 0xFF6E6E6E);
-		a.recycle();
 		
 		applyThemeColors(context);
-		
-		
-		mHuePanelWidthPx = DrawingUtils.dpToPx(getContext(), HUE_PANEL_WIDTH_DP);
-		mAlphaPanelHeightPx = DrawingUtils.dpToPx(getContext(), ALPHA_PANEL_HEIGH_DP);
-		mPanelSpacingPx = DrawingUtils.dpToPx(getContext(), PANEL_SPACING_DP);
+
+		mHuePanelWidthPx = (int)a.getDimension(R.styleable.colorpickerview__ColorPickerView_huePanelWidth,
+				DrawingUtils.dpToPx(getContext(), HUE_PANEL_WIDTH_DP));
+
+		mAlphaPanelHeightPx = DrawingUtils.dpToPx(getContext(), ALPHA_PANEL_HEIGHT_DP);
+		mPanelSpacingPx = (int)a.getDimension(R.styleable.colorpickerview__ColorPickerView_huePanelWidth,
+				DrawingUtils.dpToPx(getContext(), PANEL_SPACING_DP));
+
 		mCircleTrackerRadiusPx = DrawingUtils.dpToPx(getContext(), CIRCLE_TRACKER_RADIUS_DP);
 		mSliderTrackerSizePx = DrawingUtils.dpToPx(getContext(), SLIDER_TRACKER_SIZE_DP);
 		mSliderTrackerOffsetPx = DrawingUtils.dpToPx(getContext(), SLIDER_TRACKER_OFFSET_DP);
 
 		mRequiredPadding = getResources().getDimensionPixelSize(R.dimen.colorpickerview__required_padding);
+
+		a.recycle();
 		
 		initPaintTools();
 		

@@ -6,6 +6,8 @@
         <attr name="alphaChannelText" format="string|reference" />
         <attr name="sliderColor" format="color|reference" />
        	<attr name="borderColor" format="color|reference" />
+        <attr name="huePanelWidth" format="dimension" />
+        <attr name="huePanelSpacing" format="dimension" />
     </declare-styleable>
    
 </resources>
