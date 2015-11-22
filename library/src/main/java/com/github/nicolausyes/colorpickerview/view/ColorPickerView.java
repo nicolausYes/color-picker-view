@@ -252,7 +252,7 @@ public class ColorPickerView extends View{
 				DrawingUtils.dpToPx(getContext(), HUE_PANEL_WIDTH_DP));
 
 		mAlphaPanelHeightPx = DrawingUtils.dpToPx(getContext(), ALPHA_PANEL_HEIGHT_DP);
-		mPanelSpacingPx = (int)a.getDimension(R.styleable.colorpickerview__ColorPickerView_huePanelWidth,
+		mPanelSpacingPx = (int)a.getDimension(R.styleable.colorpickerview__ColorPickerView_huePanelSpacing,
 				DrawingUtils.dpToPx(getContext(), PANEL_SPACING_DP));
 
 		mCircleTrackerRadiusPx = DrawingUtils.dpToPx(getContext(), CIRCLE_TRACKER_RADIUS_DP);
