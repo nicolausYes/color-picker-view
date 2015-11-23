@@ -961,7 +961,7 @@ public class ColorPickerView extends View{
 	 * @param color The color that should be selected. #argb
 	 */
 	public void setColor(int color){
-		setColor(color, false);
+		setColor(color, true);
 	}
 	
 	/**
