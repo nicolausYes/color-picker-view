@@ -230,8 +230,7 @@ public class ColorPickerView extends View{
 			mVal = bundle.getFloat("val");
 			mShowAlphaPanel = bundle.getBoolean("show_alpha");
 			mAlphaSliderText = bundle.getString("alpha_text");
-			
-			
+
 			state = bundle.getParcelable("instanceState");
 		}
 		super.onRestoreInstanceState(state);
@@ -614,7 +613,7 @@ public class ColorPickerView extends View{
 		
 		
 		float hue = 360f - (y * 360f / height);
-		Log.d("color-picker-view", "Hue: " + hue);
+		//Log.d("color-picker-view", "Hue: " + hue);
 		
 		return hue;
 	}
